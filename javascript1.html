@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Use Of Select</title>
+	<style type="text/css">
+		div
+		{
+			width: 50%;
+			height: 50%;
+			background-color: hotpink;
+			padding: 30px;
+        }
+        select option
+        {
+        	height: 30px;
+
+        }
+	</style>
+	<script type="text/javascript">
+		var ctr=0;
+		function showData()
+		{
+			ctr++;
+			var x=document.getElementById("course");
+			//alert(x.value);
+			//document.getElementById("demo").innerHTML="Selected:" + ctr;
+			document.getElementById("demo").innerHTML="Selected:" + x.value;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<h1 id="demo">Use Of Select</h1>
+		<p>Select Course:</p>
+		<select id="course" onchange="showData()" multiple size="3" style=" width: 200px; height: 300px;" >
+			<option value="html">Html</option>
+			<option value="Css">Css</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Jquery">Jquery</option>
+			<option value="AJAX">AJAX</option>
+			<option value="PHP">PHP</option>
+			<option value="MYSQL">MYSQL</option>
+			<option value="SQL">SQL</option>
+			<option value="JAVA">JAVA</option>
+			<option value="Python">Python</option>
+			<option value="C++">C++</option>
+		</select>
+	</div>
+</body>
+</html>

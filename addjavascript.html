@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding And Subtacting Two Numbers</title>
+	<script type="text/javascript">
+		function sum()
+		{
+			var a=parseInt(document.getElementById("txt1").value);
+			var b=parseInt(document.getElementById("txt2").value);
+			var c=a+b;
+			document.getElementById("txt3").value=c;
+			
+			
+		}
+		function sub()
+		{
+			var a=parseInt(document.getElementById("txt1").value);
+			var b=parseInt(document.getElementById("txt2").value);
+			var c=a-b;
+			document.getElementById("txt3").value=c;
+
+		}
+	</script>
+</head>
+<body>
+ 	<input type="text" name="" placeholder="Enter first number :" id="txt1" /><br><br><br>
+	<input type="text" name="" placeholder="Enter second number :" id="txt2" /><br><br><br>
+	<input type="text" name="" placeholder="Result is number :" id="txt3" /><br><br><br>
+	<input type="button" name="" value="Sum" onclick="sum()"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="button" name="" value="Subtract" onclick="sub()" />
+
+</body>
+</html>

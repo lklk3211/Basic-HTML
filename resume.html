@@ -1,0 +1,79 @@
+
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="e">
+    <form action="/action_page.php">
+  <fieldset>
+    <legend id="heading">RESUME</legend>
+    <table>
+	    <tr>
+		    
+		    <td><span id="intro"><h2>Profile:</h2></span></td>
+			<td><span style="display:none" id="id1">Mark Smith is a capable person who has extensive experienceHighly motivated and career oriented 
+			indiv<br>idual with immeasurable experience and knowledge acquired over the past 22 years • Advanced level of proﬁ<br>ciency in all 
+			phases of the oil and gas production process; including separation, gas lift, compression and <br>dehydration. Ability to read 
+			and interpret API-RP 14C regulations and S.A.F.E. Charts as well as mechanical <br>and pneumatic drawings.
+			</span></td>
+			<td><img src="download.jfif" height="100px" width="100px" id="img"><div id="a2" style="display:none">MARK SMITH</div></td>
+			
+		</tr>
+		<tr>
+		    <td id="quali"><h2>Qualification:</h2></td>
+			<td id="id2" style="display:none" >Mark Smith was appointed as Group Chief Risk Officer of Standard Chartered plc from January 2016. He initially<br>
+				was responsible for all elements of the Risk function, but from 1 July he also took over responsibility for the 
+				Bank’s <br>Compliance function. Mark is based in London. Mark joined Standard Chartered from HSBC, where he spent <br>the
+				previous 33 years.</td>
+		</tr>
+		<tr>
+		    <td id="project"><h2>Project:</h2></td>
+			<td id="id3" style="display:none" >Bringing to the team his 35 years of national & international experience within the construction industry is Mark Smith,<br> having served 14 
+			yrs as Director leading multidisciplinary design teams.He has a broad scope of experience, ranging from<br> Heritage & Listed Buildings in UK to 
+			Cultural & Commercial developments in the Middle & Far East.He is a qualified BRE<br>EAM AP & has done the Prince 2 project Management course.
+			This development aids the communication process within<br> the wider design team and allows balanced views and advice to be given.</td>
+		</tr>
+		<tr>
+		    <td id="pro"><h2>Professional Experience:</h2></td>
+			<td id="id4" style="display:none" >Smith has extensive experience building and repositioning prominent retailers, most notably Dunkin', Kate Spade
+			New York,<br> Juicy Couture and Lucky Brand. With a strong background in finance, operations and real estate development, Mr. ... Smith<br> began his career
+			in Deloitte Consulting's Retail Strategy practice.</td>
+		</tr>
+	</table>
+	 </fieldset>
+</form>
+	<script type="text/javascript"> 
+		$("#intro").click(function() { 
+             $("#id1").show(); 
+        }); 
+		$("#quali").dblclick(function() { 
+             $("#id2").toggle(); 
+        }); 
+		$("#project").click(function() { 
+             $("#id3").fadeIn(2000);
+        });
+		$("img").click(function() { 
+             $("#a2").slideDown("slow"); 
+        });
+		$("#pro").click(function() {
+		     $("#id4").css("color", "black").slideUp(2000).slideDown(2000);
+		});
+		$("td,tr").css("font-family","Bell Mt");
+		$("legend").css("font-family","algerian").css("text-align","center").css("font-size","50px");
+		$("table").css("margin","auto");
+		//$("#heading").css("text-align","center");
+		$("#id1").mouseenter(function(){
+            $(this).css("color","grey")
+             });
+	    $("#id1").mouseleave(function(){
+            $(this).css("color","black")
+             });
+		$("#id2").hover(function(){
+            $(this).css("color","grey")
+             });
+           $(".e").css("background-color", "lightgray");
+		
+		</script>
+</body>
+</html>

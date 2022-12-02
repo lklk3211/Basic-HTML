@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>jQuery Add Elements to DOM</title>
+<script src="jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#b1").click(function(){
+            $("ol").append("<li id='l4'>"+prompt("Enter Item")+"</li>");
+        });
+    $("#b2").click(function(){
+            var a=document.getElementById("input1").value;
+        $("ol").append("<li id='l5'>"+a+"</li>");
+        });
+            $("#b3").click(function(){
+            var b=document.getElementById("input1").value;
+            $("li").remove("#"+b);
+        });
+    });
+</script>
+</head>
+<body>
+    <ol>
+        <li id="l1">Apple</li>
+        <li id="l2">Mango</li>
+        <li id="l3">Orange</li>
+    </ol>
+<button id="b1">Add item using Prompt Box</button><br><br>
+Enter Text in the box: <input type="text" id="input1"><br><br>
+<button id="b2"> Add item using Text Box </button>
+<button id="b3"> Remove item </button>
+</body>
+</html>

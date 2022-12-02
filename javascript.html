@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Use of Select in Html</title>
+	<style>
+#div1
+{
+background-color:black;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+width: 400px;
+height:fit-content;
+}
+#div2
+{
+background-color: cornflowerblue;
+width: 90%;
+text-align: center;
+
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+text-align: center;
+height: fit-content;
+
+}
+select option{
+font-size:x-large;
+padding:2px;
+text-align: center;
+}
+</style>
+<script>
+
+
+
+function showData(){
+var x=document.getElementById("courses");
+// alert(x.value);
+var txt=document.getElementById("content");
+txt.innerHTML="Your Selected Courses : "+ x.value;
+}//end of function
+
+
+
+function addValue(){
+// alert("heee");
+var x=document.getElementById("courses");
+var option=document.createElement("option");
+var txt=prompt("Enter value to add :");
+//option.value=txt.toLowerCase();
+option.text=txt;
+x.add(option);
+}//end of function
+
+
+
+
+var courses="<hr>";
+function showValues()
+{
+var x=document.getElementById("courses");
+if(x.length>1)
+{
+for(i=0;i<x.length;i++)
+{
+if(x[i].selected)
+{
+courses=courses+x[i].value + "<hr>";
+}
+}//end of for loop
+var txt=document.getElementById("content");
+txt.innerHTML="Your Selected Courses :" + courses;
+courses="<hr>";
+}
+else
+{
+alert("Please select multiple values:");
+}
+
+}//end of function
+
+
+
+
+
+</script>
+</head>
+<body>
+	<center>
+		<div id="div1">
+			<h1 style="background-color: gold;">Use Of Select in HTML</h1>
+            <select id="courses" style="width: 90%; border-radius: 10px;" size="4" multiple onchange="showData()">
+                 <option value="C">C Language</option>
+                 <option value="C++">C++ Language</option>
+                 <option value="html">HTML</option>
+                 <option value="css">CSS</option>
+                 <option value="Js">Java Script</option>
+                 <option value="php">Php</option>
+                 <option value="python">Python</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Show Multiple values" onclick="showValues()" style="width: 80%; height: 30px; font-size: 18px;" />
+            <br>
+            <input type="button" value="Add Item" onclick="addValue()" style="width: 80%;height: 30px; font-size: 18px;" />
+            <div id="div2">
+            <h2 style="background-color:gold;">You Have Selected:</h2>
+            <h3 id="content" style="">Course is:</h3>
+            </div>
+        </div>
+     </center>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>use of slider</title>
+        <script type="text/javascript">
+            var ctr=1;
+            function nextImage() {
+            x=document.getElementById("myimage");
+            if(ctr==1)
+            x.src="Elephant.jpg";
+            else if(ctr==2)
+            x.src="Jaguar.jpg";
+            else if(ctr==3)
+            x.src="Panda.jpg";
+            else if(ctr==4)
+            {
+            x.src="Deer.jpg";
+            }
+            ctr=ctr+1;
+            }
+            function prevImage(){
+                x=document.getElementById("myimage");
+                if(ctr<0){
+                x.src="Deer.jpg";
+                
+                }
+
+            }
+
+            
+            
+        
+            
+
+
+        </script>
+    
+    </head>
+    
+    <body>
+<img id="myimage" src="Tiger.jpg"/>
+    </br>
+    </br>
+<input type="button" value="<<<<" onclick="prevImage()" />
+<input type="button" value=">>>>" onclick="nextImage()" /> 
+    </body>
+</html>

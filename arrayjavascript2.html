@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            use of arrays
+        </title>
+        <script>
+            function sum(num1,num2)
+            {
+                res=num1+num2;
+                return res;
+            }//end of function 
+            function wish(name)
+            {
+                //alert("Good Evening" +name);
+               ans=sum(100,20);
+               alert("the value of ans is " + ans);
+            }
+
+
+           function useArray()
+            {
+                var str="";
+                //var arr=['html','css','java','javascript','']
+
+                var arr=new Array(5);
+                
+                for(i=0;i<arr.length;i++)
+                {
+                arr[i]=prompt("Enter value");
+
+                }
+                arr[5]=6;
+                for(i=0;i<arr.length;i++)
+                {
+                    str=str+arr[i] +" ";
+                } 
+                
+                alert(str);
+            }//end of function
+            function useConfirm()
+            {
+                var res=confirm("Are you sure you want to exit ?");
+                if(res==true)
+                {
+                    window.close();
+                }
+            }//end of function
+            function useThis(x)
+            {
+                x.value="Compuhelp";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>use of Arrays and functions</h1>
+        <input type="button" value="Use of Array" onclick="useArray()" />
+        <input type="button" value="use of confirm box" onclick="useConfirm()"/>
+        <input type="button" value="using functions" onclick="wish('sunil guleria')"/>
+        <input type="button" value="using functions" onclick="useThis(this)"/>
+    </body>
+</html>

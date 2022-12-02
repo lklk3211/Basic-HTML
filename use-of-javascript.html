@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Use Of Javascript</title>
+	<script type="text/javascript">
+		/*function changeText(){
+			alert("hello javascript");
+			x=document.getElementById("head1");
+			x.innerHTML="This is new text assigned";
+			x.style.color="red";
+		}*/
+		/*function changeColor(){
+			x=document.getElementById("head1");
+			x.style.color="cyan";
+		}*/
+		function changeText(num)
+		{ if (num==0) {
+			document.getElementById("head1").innerHTML="Finally you are also changed.....";
+			document.getElementById("head1").style.color="red";
+		}
+		else
+		{
+			document.getElementById("head1").innerHTML="This is my first heading";
+			document.getElementById("head1").style.color="black";
+		}
+
+		}
+		function sum(){
+			textbox1=document.getElementById("txt1");
+			textbox1.value="Finally changed";
+			textbox2=document.getElementById("txt2");
+			textbox2.value="Finally changed";
+			//num1=10;
+			
+			num1=prompt("Enter first number :");
+			num2=prompt("Enter second number :");
+			res=num1+num2;
+			alert(res);
+
+
+		}
+		//sum();
+
+
+	</script>
+</head>
+
+<body>
+	<h1 id="head1" onclick="sum()" onmouseover="changeText(0)" onmouseout="changeText(1)" > Use of Javascript</h1>
+	<input type="text" name="" placeholder="Enter first number :" id="txt1" />
+	<input type="text" name="" placeholder="Enter second number :" id="txt2" />
+	<input type="text" name="" placeholder="Result is number :" id="txt3" />
+	<input type="button" name="" value="sum" onclick="sum()"/>
+
+
+	
+
+
+</body>
+</html>

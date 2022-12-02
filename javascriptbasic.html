@@ -1,0 +1,41 @@
+
+<html>
+<head>
+	<title>First web page!</title>
+</head>
+<body>
+	<h1 align="center" id="head1" onmouseover="changeText()">Changeable Text!</h1>
+	<input type="text" id="txt1" placeholder="textbox1" name="txt1"/>
+	<input type="button" value="clickme1" name="name" onclick="chngTxt()">
+	<input type="text" id="txt2" placeholder="textbox2" name="txt2"/>
+	<input type="button" value="clickme2" name="name" onclick="chngTxt()"><br>
+	<br>
+	<input type="button" value="SUM" name="name" onclick="chngTxt()">
+	<input type="text" id="txt3" placeholder="textbox3" name="txt3"/>
+
+	<!--<input type="button" value="clickme" name="name" onclick="chngTxt()">-->
+
+	<script> 
+		
+		function changeText()
+		{
+			
+			document.getElementById("head1").innerHTML="Text is changed";
+			document.getElementById("head1").style.color="Orange";
+
+		}
+
+		function chngTxt()
+		{
+			
+			textbox1=document.getElementById("txt1");
+			textbox2=document.getElementById("txt2");
+			textbox3=document.getElementById("txt3");
+
+			textbox3.value=textbox1.value+textbox2.value;
+
+		}
+
+	</script>
+</body>
+</html>

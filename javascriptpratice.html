@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Use Of Array In Javascript</title>
+	<script type="text/javascript">
+		/*var arr=["HTML","CSS","Javascript","Ajax","Jquery"];//using array literal
+		document.write(arr[0]+"<br>");
+		document.write(arr[1]+"<br>");
+		document.write(arr[2]+"<br>");
+		document.write(arr[3]+"<br>");
+		document.write(arr[4]);*/
+		var arr1=new Array("HTML","CSS","Javascript","Ajax","Jquery");//using new keyword
+		var arr2=new Array(5);//its our wish to give size or not in paranthesis
+		var arr3=[];//empty array
+		var marks=[10,20,30,40,50];//numeric array
+		var str=["first","second","third"];//string array
+		var boolArr=[true,false];//boolean array
+		var double=[10.2,12.35,34.56];//array with decimal numbers
+		var mix=["compuhelp",19999,true,76.98,"best learning"];//mixed array
+
+
+
+		/*var lang=["HTML","CSS","JAVA","C","C++","Javascript"];
+		var len;
+		len=lang.length;
+		for(i=0;i<len;i++)
+		{
+			document.write(lang[i]+"<br>");
+		}*/
+
+
+
+		/*var comp=new Array();
+		var i,len;
+		comp[0] = "HTML";
+		comp[1] = "CSS";
+		comp[2] = "JAVA";
+		comp[3] = "PHP";
+		comp[4] = "Ajax";
+		comp[5] = "Jquery";
+		len=comp.length;
+		for(i=0;i<len;i++)
+		{
+		document.write(comp[i]+"<br>");
+		}*/
+
+		//USING PROMPT 
+
+
+		/*var marks=new Array(5);
+		var i,len;
+		len=marks.length;
+		for(i=0;i<len;i++)
+		{
+		marks[i]=prompt("Enter marks :");
+		}
+		for(i=0;i<len;i++)
+		{
+		document.write(marks[i]+"<br>");
+		}*/
+
+
+		//for IN loop
+
+		/*var array1 =new Array("HTML","CSS","JAVA","PHP","AJAX","Javascript");
+		for(y in array1)
+		{
+			document.write(array1[y]+"<br>");
+		}*/
+
+
+		//for OF loop
+
+		/*var array1 =new Array(10,20,30,40,50,60,70,80,90);
+		for(y of array1)
+		{
+			document.write(y+"<br>");
+		}*/
+
+
+
+		var courses=["HTML","CSS","JAVASCRIPT","Ajax","Jquery"];
+		courses.splice(1,"JAVA","PHP");
+		document.write(courses);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
